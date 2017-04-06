@@ -1,4 +1,4 @@
-package github.mobile.publiciteweb.com.github_dispatch;
+package com.publiciteweb.mobile.github;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
