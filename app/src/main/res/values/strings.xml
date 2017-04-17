@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">GitHUB_dispatch</string>
+    <string name="title_activity__maps">Map</string>
 </resources>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#dbdad7">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbarGestion"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:elevation="4dp"
+        android:theme="@style/AppTheme"
+        android:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        android:background="#FFFFFF"
+        android:titleTextColor="#000000"/>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="LISTE DES DRIVERS"
+        android:gravity="center"
+        android:textSize="20dp"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:background="#ffbf00"
+        android:padding="20dp"
+        android:id="@+id/txtTitle"/>
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#ffbf00"
+        android:src="@drawable/img_add"
+        android:id="@+id/btnAddition"
+        android:padding="10dp"
+        android:layout_alignRight="@id/txtTitle"
+        android:layout_alignParentRight="true"/>
+
+</RelativeLayout>
+
+    <SearchView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/searchDriver"
+        android:textSize="20dp"
+        android:imeOptions="flagNoExtractUi"
+        android:queryHint="nom et prènom"/>
+
+    <ListView
+        android:id="@+id/listeViewDriver"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#dbdad7"
+        android:scrollbars="vertical" />
+</LinearLayout>
